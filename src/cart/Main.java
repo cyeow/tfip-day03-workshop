@@ -20,6 +20,11 @@ public class Main {
         // String activeUser = null;
 
         // check / setup directory 
+        if(args.length < 0 ) {
+            System.out.println("Usage: java ... .Main <cartDirectory>");
+            return;
+        }
+
         Path p = Paths.get(args[0]);
         activeDirectory = p.toFile();
 
